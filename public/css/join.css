@@ -1,0 +1,133 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-page centered layout */
+body,
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Wrapper */
+.centered_form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Box styling */
+.centered_form__box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Title */
+.centered_form__box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Labels */
+.centered_form__box label {
+    display: block;
+    margin: 12px 0 6px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Inputs */
+.centered_form__box input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.centered_form__box input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* Button */
+.centered_form__box button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.centered_form__box button:hover {
+    background: #1a5ad9;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #2f3640;
+    color: #ecf0f1;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.room-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
+}
+
+.list-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #bdc3c7;
+}
+
+.users {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.users li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background: #3d4451;
+    transition: background 0.2s ease-in-out;
+    cursor: default;
+}
+
+.users li:hover {
+    background: #4a5568;
+}
